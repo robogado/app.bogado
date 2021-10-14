@@ -2,6 +2,9 @@ import React from "react"
 
 import ReactDOM from "react-dom"  
 
-const Elemento = () => <p>Hola mundo</p>
+import App from "./App" 
 
-ReactDOM.render( <Elemento/> , document.getElementById ("root") )
+import "./style.css"
+
+//Pasa una UNICA vez//
+ReactDOM.render( <App/> , document.getElementById ("root") )
