@@ -13,6 +13,7 @@
 .menuPrincipal > li{
     font-size: 1.5rem;
     padding: 50px 100px 50px 100px;
+    
 }
 
 a:link{
@@ -22,3 +23,10 @@ a:link{
 #header{
     background-color: pink;
 }
+
+.material-icons{
+    margin-left: 20px;
+    font-size: 48px;
+    color: black; 
+}
+
