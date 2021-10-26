@@ -30,3 +30,8 @@ a:link{
     color: black; 
 }
 
+.botonContador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
