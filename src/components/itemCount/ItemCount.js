@@ -30,12 +30,13 @@ const ItemCount = (props) => {
     }
 
 
-    //Creamos los botones + y - para aumentar y disminuir las unidades
+    //Creamos los botones + y - para aumentar y disminuir las unidades, en caso de que el stock en itemListContainer
+    //sea 0 no podemos aumentar ni disminuir las unidades
     return (
         <div className="botonContador">
-            <button onClick= {sumaDeContador.sumaStock}>+</button>
+            <button onClick= {sumaDeContador.sumaStock} disabled={stock==="0"}>+</button>
             <p>{unidades}</p>
-            <button onClick= {restaDeContador.restaStock}>-</button>
+            <button onClick= {restaDeContador.restaStock} disabled={stock==="0"}>-</button>
             <p>Stock disponible: {stock} </p>
         </div>
     )
