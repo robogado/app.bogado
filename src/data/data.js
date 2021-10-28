@@ -84,3 +84,6 @@ const data = [
     }
 
 ]
+
+//Para que los demas archivos puedan leer la variable
+export default data

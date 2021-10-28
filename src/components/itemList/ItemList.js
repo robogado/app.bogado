@@ -23,13 +23,11 @@ const ItemList = () => {
 
     //Seteamos el producto con el resultado de la promesa        
     useEffect(() => {
-        promesaProductos().then((items) => {
-            setProductos(items)
+        promesaProductos().then((item) => {
+            setProductos(item)
             setCargando(false)
         })
 
-        // promesaProductos().then(items => console.log(items))
-        // console.log(data)
 
     }, [])
 
@@ -38,7 +36,7 @@ const ItemList = () => {
         <>
             {cargando ? <h2>Cargando...</h2> :
                 productos.map((producto) =>
-                    <Item key={producto.id} nombre={producto.nombre} descripcion={producto.descripcion} precio={producto.precio} />
+                    <Item key={producto.id} nombre={producto.nombre} descripion={producto.descripion} precio={producto.precio} />
                 )
             }
 

@@ -12,7 +12,6 @@ function App() {
             <Header />
             <NavBar />
             <ItemListContainer saludo={`Bienvenidas a Free Beauty by ${user}`} />
-            <ItemList />
             <Footer />
         </>
     )

@@ -1,4 +1,4 @@
-const Item = (nombre, descripcion, precio) => {
+const Item = ({nombre, descripcion, precio}) => {
     return (
         <div className="item">
             <h2>Componente Item</h2>
